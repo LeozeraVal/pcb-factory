@@ -1,85 +1,110 @@
-Este Readme é um modelo que pode ser usado para os repositórios no GitHub de projetos feitos para a atividade de Extensão Hackerspace, da Universidade Federal de São Carlos - Campus Sorocaba, organizada pelo hackerspace [HackoonSpace](https://hackoonspace.com/). É importante observar que alguns campos e informações são opcionais, e que não é necessário seguir rigorosametne o modelo proposto. O objetivo é que, obrigatóriamente, os grupos coloquem em seus repositórios as informações requisitadas aqui, porém o formato em si pode ou não seguir o modelo.
-
-Além disso, para cada tópico, existem alguns possíveis exemplos de como o grupo pode apresentar as informações sobre o projeto (ex: lista enumerada, texto descritivo, etc). Alguns tópicos possuem comandos que só podem ser melhor visualizados na versão Raw ou txt do Readme.
-
-É preferível que a linguagem da documentação esteja em português, mas também é aceito que esteja em inglês.
-
-Para responder quaisquer dúvidas, entrar em contato com a equipe do HackoonSpace.
-
-# Titulo do projeto
+# PCB Factory
 
 ## Conceito do projeto
-Aqui vocês definem o conceito do projeto, explicando sucintamente sobre o que ele se trata, qual a finalidade/utilidade, etc. 1-2 parágrafos já são suficientes, desde que bem explicados, mas sintam-se a vontade para escrever mais. Também sintam-se a vontade para usar a criatividade.
+Printed circuit boards (PCBs) ou Placas de Circuito Impresso são componentes essenciais no design de circuitos eletrônicos estes que são importantes na cultura maker. Este documento é um tutorial de uso e explicação do processo de fabricação de um PCB caseiro com qualidade industrial.
 
-### Exemplo:
-
-Este projeto foi desenvolvido com o intuíto de facilitar a manuntenção de aplicações Web contra invasões indesejadas do tipo XYZ. Para isto, foi implementado um programa que realizasse a checagem de pacotes recebidos por um Website com host local em uma máquina com Windows, buscando traços de possíveis códigos maliciosos que possam interferir na execução habitual do servidor da aplicação.
+O PCB Factory é um pacote que consiste em 2 componentes, um é a estação de tratamento de luz ultravioleta, e outra é a estação de centrifugação de placas.
   
 ## Pré-requisitos e recursos utilizados
-Citação das linguagens, bibliotecas, peças de hardware, e outras coisas que o grupo utilizou para realizar o projeto. Não é necessário explicar qual foi o uso exato de cada coisa no projeto. Bibliotecas e recursos padrões das tecnologias utilizadas não precisam ser citados (ex: stdio.h, iostream.h, etc.).
+Primeiramente foram utilizadas diversas fontes de conhecimento sobre o processod e manufatura de PCBs como:
+1. [ezcontents](https://ezcontents.org/pcb-fabrication-part-1-dry-film)
+2. [Youtube](https://www.youtube.com/watch?v=cRCFGZxmob0)
+3. [Youtube](https://www.youtube.com/watch?v=1C3k6dyVN18)
 
-Se alguma biblioteca externa ou código de outra pessoa foi utilizado como recurso, é importante citar a fonte de onde vocês retiraram (pode ser o link no Github, ou tutorial usado como referência).
+Alem disso segue a lista de materiais usada para a criação do projeto:
 
-### Exemplo:
+- 2x Caixa de Plástico grande com tampa Removível
+- 4x Esgana Gato
+- 1x Secador de Cabelo Pequeno
+- 1x Lâmpada de Luz Ultravioleta
+- 1x Tabua de Madeira
+- 1x Cabo de vassoura
+- 1x Motor de Maquina de Costura
+- Parafusos e Porcas
+- 1x Soquete para lâmpada com fio
+- 1x Lata de Tinta Preta
 
-O grupo utilizou a linguagem C para desenvolver a implementação geral do projeto, além de importar as seguintes bibliotecas:
-1. abcdzd.h
-2. exemplo.h, disponível em [IstoEhApenasUmExemplo](https://github.com/istoehapenasumexemplo/minhabiblioteca)
+As ferramentas utilizadas foram
 
-Também foi utilizado o tutorial disponível em [IstoEhOutroExemplo](https://github.com/istoehoutroexemplo/oi) como base para o grupo compreender a implementação da função X dentro da linguagem em questão.
+- Furadeira
+- Serra
+- Ferro de Solda
+- Parafusadeira
   
 ## Passo a passo
-Passos que o grupo realizou para criar, implementar ou projetar o projeto. É importante descrever pelo menos o mais importante para que outras pessoas compreendam como o grupo conseguiu realizar o projeto, quais as atividades feitas, etc, e possam ter meios compreender como reproduzir o projeto, se assim fosse necessário.
-
-Se possível, é legal citar o nome dos arquivos implementados, se forem poucos. Por exemplo, se o seu projeto tiver 4 arquivos, cada um com uma função, citar o nome deles na parte do passo a passo correspondente. Se forem muitos arquivos para uma mesma coisa, não tem problema, podem deixar sem ou deixar apenas o nome da pasta.
-
-### Exemplo:
-
-1. Baixamos o material disponível em [Material](https://materialdeexemplodohackerspace.com.br)
-2. Estudamos como o código do material anterior funciona
-3. Implementamos um programa que se comunicasse com o código compreendido (comunicacao.c e comunicacao.h)
-4. Implementamos uma interface gráfica para utilizar o programa de comunicação de forma mais intuitiva.
-
-## Instalação
-Passos necessários para instalar ou recriar seu projeto, se assim for necessário. A descrição dos passos não precisa ser complexa. É necessário apenas o mais importante para que outras pessoas saibam como fazê-lo.
-
-### Exemplos:
-a)
-  ```
-  Execute o comando X Y Z, no terminal, na pasta do projeto
-  ```
-b)
-  1. Abra a pasta 
-  2. Execute o comando A B C no terminal
-  3. Compile os arquivos X, Y e Z juntos
-  4. Crie um arquivo W.txt de entrada
+1. Foram cortados dois pedaços de tabua de madeira um pouco menor do que o espaço interno da caixa.
+2. Uma vassoura foi serrada para obter 8 pezinhos de madeira para suspender as tabuas dentro das caixas. Fixamos ambos juntos e na caixa por meio de parafusos.
+3. Um limitador foi colocado no pedal do motor da maquina de costura
+4. Foi furado um buraco no meio de umas das tabuas, assim possibilitando a fixação do motor de maquina de costura nessa mesma tábua.
+5. O resto do buraco foi lixado até ser possivel encaixalo novamente com folga no mesmo buraco que foi tirado.
+6. Utilizando 4 parafusos, este circulo restante foi fixado ao motor de maquina de costura
+7. Dois buracos foram feitos na caixa para a fixação do secador de cabelo e a passagem dos cabos do motor.
+8. Dois esgana gatos foram usados para fixar um dos lados da tampa a caixa, impedindo de abrir a caixa e deixar aberta.
+9. Na outra caixa foi feito a mesma coisa com os pés de cabo de vassoura e tabua, contudo nenhum buraco foi feito na tabua.
+10. Apenas um buraco foi feito na caixa para a fixação de um soquete de lampada.
+11. Neste soquete foi fixado uma lampada de luz UV.
+12. A caixa foi pintada de preto por dentro menos um pequeno buraco para indicar que a luz está funcionando.
 
 ## Execução
-Passos necessários para executar, rodar ou testar seu projeto. Vocês podem seguir o mesmo modelo dos exemplos de Instalação.
+Lista de materiais para criação de uma PCB:
+- Placa de Cobre do tamanho desejado para suportar o circuito.
+- Modelo do circuito em qualquer software de design de circuitos eletrônicos.
+- Tinta Fotossensível
+- Papel Translucido
+- Barrilha
+- Soda Caustica
+- Percloreto de Ferro, solução para corroer o cobre.
+- Furador de PCB (Pode ser substituído por uma furadeira com broca pequena)
+
+a) Imprima o design do circuito no papel translucido. Este papel sera utilizado como mascara no processo de cura. Geralmente a impressora deve possuir opção Ink Jet, o papel deve ser configurado como transparente ou então photo glossy. E a qualidade de impressão deve ser a maior possível (Melhor trocar tempo por qualidade neste caso); ![fotolito](./images/fotlito.jpg)
+    
+b) Lixe a placa de cobre e a limpe bem;![placa-cobre](./images/placa-cobre.jpg)
+        
+c) Insira a placa na estação de centrifugação. Coloque vários pedaços de fita dupla face na parte sem cobre da placa, limpe com álcool a base da centrifuga e então cole na base da estação de centrifugação;![Placa com Fita](./images/Fita_dupla_face.jpg)![Base Centrifuga](./images/Base_Centrifuga.jpg)![20230323_123642.jpg](./images/placa-colada.jpg)
+        
+d) Aplique uma camada de tinta fotossensível na placa de cobre, procure deixar uma maior concentração de tinta no centro da placa;![Tinta Secador](./images/secador-tinta.jpg)
+        
+e) Feche e ligue a centrifuga por 90 segundos;
+
+f) Ligue o secador da estação de centrifugação e deixe por 15 minutos, após este tempo deixe mais 10 minutos com a tampa aberta sem o secador ligado e repita este processo inteiro mais uma vez;
+
+g) Retire da estação de centrifugação;
+
+h) Coloque a mascara impressa em cima da placa coberta com a tinta, garanta que esta corretamente alinhada e fazendo contato direto com a superfície pintada; Para obter mais precisão pode ser inserida uma camada de papel transparente diretamente em cima da tinta, e então a camada com o máscara assim possibilitando manusear a máscara para alinhar perfeitamente.
+
+i) Insira a placa na estação de luz ultravioleta pelo tempo especificado na tinta fotossensível. Ou no geral 4 minutos;
+
+j) Misture 200 ml de agua com meia colher de Barrilha;
+
+k) Insira a placa sem a mascara na solução misturada no passo anterior. Com um rolo de tinta pequeno, esfregue a placa gentilmente para retirar a tinta que não foi exposta a luz ultra violeta, deixando a superfície de cobre exposta![Placa Tinta Curada](./images/tinta-curada.jpg)
+    
+l) Reinsira a placa na estação de cura ultravioleta por mais 2 minutos;
+
+m) Faça o mesmo processo do passo 11 porem com o percloreto de ferro. O percloreto de ferro vai corroer todo cobre exposto. Deixe no banho de percloreto por 10 minutos e mexa o percloreto durante o processo;
+
+n) Lave a placa para limpar o percloreto de ferro com cuidado **PROCURE NAO JOGAR PERCLORETO EM NENHUMA TUBULAÇÃO!** O restante do percloreto pode ser colocado em uma garrafa e reutilizado na próxima pcb;![20230323_135320.jpg](./images/processo-corros%C3%A3o.jpg)
+    
+o) Ferva 200ml de agua e misture com 2 colheres de soda caustica. **CUIDADO NAO TOQUEM NA MISTURA**. Insira a placa nesta solução. Utilizando uma colher ou outra ferramenta, manuseie a placa para descolar a tinta ainda presente na mesma;
+
+p) Com cuidado limpe novamente a placa com agua;
+
+q) Faça a impressão de outra mascara, porem desta vez apenas com as ilhas de solda e com essa mascara alinhada as ilhas ja presentes na placa de cobre repita os passos 2 a 12 porem com a tinta fotossensível para mascara, e a cura na estação UV deve ser de apenas 30 segundos;![Fotolito Ilhas](./images/fotolito-ilhas.jpg)![Tinta Curada Ilhas](./images/tinta-curada2.jpg)
+    
+r) Corte e lixe a placa ate ficar do tamanho do circuito que foi impresso;
+
+s) Utilizando um furador de PCB ou uma furadeira com a broca pequena, fure os buracos onde os componentes serão inseridos no caso de componentes com pontos de solda perfurados. No caso de componentes montados na superfície não ha necessidade de furacão;
+
+t) Teste a placa utilizando um multímetro e o modo de teste de continuidade;
+
+u) Dilua Breu em álcool isopropílico (No projeto entregue foi fornecido um concentrado de breu, dilua o concentrado em 3 partes de alcool para 1 de breu; Ou então faça uma mistura de 10 partes de álcool para 1 de breu em pó ) e então pingue nas ilhas de solda com um cotonete (ou passe na placa inteira, criando uma camada de verniz), isso ira formar uma camada anticorrosão também nas ilhas, que ira derreter quando for aplicado calor para solda.
+
+v) Insira os componentes em seus lugares;
+
+w) Solde os componentes;
 
 ## Bugs/problemas conhecidos
-Lista de possíveis problemas, bugs, falhas ou comportamentos esquisitos que o grupo conheça sobre o projeto. Esta seção é importante para que outras pessoas saibam quais tipos de erros elas podem encontrar. Seria legal citar motivos que o grupo acredita que sejam os causadores destas coisas, mas não é obrigatório.
+O projeto tem alguns riscos com materiais quimicos e também com a centrifuga, portanto é recomendado muito cuidado a operar.
+Além disso o maior ponto de cuidado é a operação da centrifuga. Se a vibração da centrifuga for suficiente para mover a caixa, diminua a pressão no pedal
 
-### Exemplo:
-
-O projeto possui uma falha ao abrir a aba INICIO, após realizar uma inserção com caractéres acentuados. Também foi encontrada uma falha ao definir a tela de fundo com a cor Roxa, provavelmente por conta da palheta de cores limitada da tecnologia que foi utilizada.
-
-## Autores
-Aqui, é importante referenciar o nome dos integrantes do grupo. Não precisa de RA. Outras informações, como contato ou perfil no Github, ficam a critério do grupo. Se o grupo for muito grande, é bom referenciar as funções de cada um.
-
-### Exemplo:
-* Marcus Vinícius N. Garcia ([Infinitemarcus](https://github.com/Infinitemarcus))
-* Garcia Neto Junior da Silva
-* João das Neves - Desenvolvedor do Back-End
-
-## Demais anotações e referências (opcional)
-Aqui, o grupo pode colocar quaisquer outras informações que ache relevante, se assim desejar. Links de referências e materiais de estudo utilizados ou recomendados são sempre bem vindos. 
-
-## Imagens/screenshots
-É necessário colocar pelo menos 3 imagens/screenshots do projeto, porém fiquem a vontade para colocar mais, a medida do que vocês acharem legal para ilustrar o projeto.
-
-Para colocar imagens no Readme do Github, vocês podem usar o seguinte comando (abrir este Readme no modo raw ou como txt):
-
-![Imagem](https://github.com/hackoonspace/Hackoonspace-template/blob/master/exemplo.png)
-
-É preferível que vocês usem imagens hospedadas no próprio GitHub do projeto. É só referenciar o link delas no comando acima.
+## Autor
+* Leonardo Valerio Morales ([LeozeraVal](https://github.com/LeozeraVal))
